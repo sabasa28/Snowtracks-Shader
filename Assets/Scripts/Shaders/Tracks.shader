@@ -25,31 +25,31 @@ Shader "Custom/Tracks"
 
         #include "Tessellation.cginc"
 
-            struct appdata {
-                float4 vertex : POSITION;
-                float4 tangent : TANGENT;
-                float3 normal : NORMAL;
-                float2 texcoord : TEXCOORD0;
-            };
+        struct appdata {
+            float4 vertex : POSITION;
+            float4 tangent : TANGENT;
+            float3 normal : NORMAL;
+            float2 texcoord : TEXCOORD0;
+        };
 
-            float _Tess;
+        float _Tess;
 
-            float4 tesseDistance(appdata v0, appdata v1, appdata v2) {
-                float minDist = 10.0;
-                float maxDist = 100.0;
-                return UnityDistanceBasedTess(v0.vertex, v1.vertex, v2.vertex, minDist, maxDist, _Tess);
-                //return UnityEdgeLengthBasedTess(v0.vertex, v1.vertex, v2.vertex, 32-_Tess);
-            }
+        float4 tesseDistance(appdata v0, appdata v1, appdata v2) {
+            float minDist = 10.0;
+            float maxDist = 100.0;
+            return UnityDistanceBasedTess(v0.vertex, v1.vertex, v2.vertex, minDist, maxDist, _Tess);
+            //return UnityEdgeLengthBasedTess(v0.vertex, v1.vertex, v2.vertex, 32-_Tess);
+        }
 
-            sampler2D _Splat;
-            float _Displacement;
+        sampler2D _Splat;
+        float _Displacement;
 
-            void disp(inout appdata v)
-            {
-                float d = tex2Dlod(_Splat, float4(v.texcoord.xy,0,0)).r * _Displacement;
-                v.vertex.xyz -= v.normal * d;
-                v.vertex.xyz += v.normal * _Displacement;
-            }
+        void disp(inout appdata v)
+        {
+            float d = tex2Dlod(_Splat, float4(v.texcoord.xy,0,0)).r * _Displacement;
+            v.vertex.xyz -= v.normal * d;
+            v.vertex.xyz += v.normal * _Displacement;
+        }
 
         sampler2D _GroundTex;
         fixed4 _GroundColor;  
