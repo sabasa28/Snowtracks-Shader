@@ -136,13 +136,13 @@ GameObject:
   - component: {fileID: 112360355}
   - component: {fileID: 112360354}
   - component: {fileID: 112360353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &112360353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 963194227}
   drawShader: {fileID: 4800000, guid: 78e2f4c8ba1a8ea45800c0bad93b66fe, type: 3}
+  footprintTexUp: {fileID: 2800000, guid: 41b795e2b50e99649982f189e231b8b5, type: 3}
+  footprintTexDown: {fileID: 0}
 --- !u!64 &112360354
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -324,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584588389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.979378, y: 3.654924, z: -25.44}
+  m_LocalPosition: {x: 12.5, y: 3.654924, z: -25.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -513,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826318950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3, y: 4.22, z: -3.28}
+  m_LocalPosition: {x: -24.44, y: 4.22, z: -9.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -532,13 +534,13 @@ GameObject:
   - component: {fileID: 928779622}
   - component: {fileID: 928779621}
   - component: {fileID: 928779620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &928779620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 963194227}
   drawShader: {fileID: 4800000, guid: 78e2f4c8ba1a8ea45800c0bad93b66fe, type: 3}
+  footprintTexUp: {fileID: 2800000, guid: 41b795e2b50e99649982f189e231b8b5, type: 3}
+  footprintTexDown: {fileID: 0}
 --- !u!64 &928779621
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -707,7 +711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0.78029394, z: 0.62541306, w: 0}
-  m_LocalPosition: {x: -5.24, y: 18.2, z: 0.4}
+  m_LocalPosition: {x: -2.3, y: 34.8, z: 7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -726,13 +730,13 @@ GameObject:
   - component: {fileID: 1285472271}
   - component: {fileID: 1285472270}
   - component: {fileID: 1285472269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1285472269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 963194227}
   drawShader: {fileID: 4800000, guid: 78e2f4c8ba1a8ea45800c0bad93b66fe, type: 3}
+  footprintTexUp: {fileID: 2800000, guid: 41b795e2b50e99649982f189e231b8b5, type: 3}
+  footprintTexDown: {fileID: 0}
 --- !u!64 &1285472270
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -903,7 +909,7 @@ GameObject:
   - component: {fileID: 1512200854}
   - component: {fileID: 1512200853}
   - component: {fileID: 1512200857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +988,7 @@ Transform:
   m_GameObject: {fileID: 1512200852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.026, y: 3.026, z: 3.026}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1001,6 +1007,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 963194227}
   drawShader: {fileID: 4800000, guid: 78e2f4c8ba1a8ea45800c0bad93b66fe, type: 3}
+  footprintTexUp: {fileID: 2800000, guid: 41b795e2b50e99649982f189e231b8b5, type: 3}
+  footprintTexDown: {fileID: 2800000, guid: 845c34a05f7a1c84b9b73c251906c26a, type: 3}
 --- !u!1 &1876714683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,7 +1099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876714683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.38, y: 7.5, z: -3.89}
+  m_LocalPosition: {x: 27.4, y: 7.5, z: -3.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1203,7 +1211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934350257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.44, y: 1.76, z: -1.24}
+  m_LocalPosition: {x: -3.28, y: 1.76, z: -2.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
